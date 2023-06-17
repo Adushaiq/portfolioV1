@@ -13,19 +13,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
-  
 
-  <script type="module" crossorigin src="assets/index-0fc1a8e6.js"></script>
-  <link rel="stylesheet" href="assets/index-ff553f91.css">
+
+  <script type="module" crossorigin src="assets/index-912bd9c9.js"></script>
+  <link rel="stylesheet" href="assets/index-6c798ee5.css">
 </head>
 
-<body class="bg-secondary font-poppins scrollbar-thin scrollbar-thumb-primary scrollbar-thumb-rounded-full">
+<body 
+  class="bg-secondary font-poppins scrollbar-thin scrollbar-thumb-primary scrollbar-thumb-rounded-full">
 
   <div id="mobileNav"
-    class="hidden md:hidden w-full h-[40vh] pt-10 z-50 fixed bg-secondary left-0 right-0 items-center justify-center border-b-2">
+    class="hidden flex-col md:hidden w-full  pt-2 pb-10 z-50 fixed bg-secondary left-0 right-0 items-center justify-center border-b-2">
 
-    <img id="closeNav" class="absolute top-[34px] right-[57px] w-5 h-3 "
-     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgB7dJBEQAgCEXBh0lsZ2w9WoEbIRgOMH8zrJ3vF9jUeAsZz7RI0vovCso6DH/KFYcdAAAAAElFTkSuQmCC" alt="">
+    <header class="z-10 flex pb-3 md:pb-0 md:pt-10  w-9/12 items-center  justify-between h-20 mx-auto bg-secondary">
+      <h1 class="text-primary  font-semibold text-base top-[30px] left-[30px]">
+        <a href="index.html">Adnan Shaikh</a>
+      </h1>
+
+      <img id="closeNav" class=" top-[34px] right-[47px] w-5 h-3 " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgB7dJBEQAgCEXBh0lsZ2w9WoEbIRgOMH8zrJ3vF9jUeAsZz7RI0vovCso6DH/KFYcdAAAAAElFTkSuQmCC" alt="">
+    </header>
+
+
 
     <div class="text-white flex flex-col items-center gap-5 text-lg font-semibold">
       <a href="#About-Me" class="nav-link">About Me</a>
@@ -36,49 +44,56 @@
     </div>
   </div>
 
+  <div id="intro" class="bg-secondary fixed z-50 top-0 left-0 w-[100%] h-[100%] opacity-1 transition-opacity ease-in-out duration-1000 ">
+    <div class="spinner top-[50%] md:left-[50%] left-[45%] absolute">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 
   <div class="w-full">
     <div class="w-9/12 mx-auto relative">
       <!-- navbar -->
-      <header
-        class="z-10 flex pt-3 pb-3 md:pb-0 md:pt-10 fixed w-9/12 items-center  justify-between h-20 mx-auto bg-secondary">
-        <h1 class="text-primary  font-semibold text-base top-[30px] left-[30px]">
-          <a href="index.html">Adnan Shaikh</a>
-        </h1>
+      <section class="opacity-0">
+        <header
+          class="z-10 flex pt-3 pb-3 md:pb-0 md:pt-10 fixed w-9/12 items-center  justify-between h-20 mx-auto bg-secondary">
+          <h1 class="text-primary  font-semibold text-base top-[30px] left-[30px]">
+            <a href="index.html">Adnan Shaikh</a>
+          </h1>
+          <ul class="text-white hidden md:flex gap-6 text-base">
+            <li class="hover:text-primary transition-all duration-500 relative group h-4 cursor-pointer">
+              <span class="text-primary"> 01.</span>
+              <a href="#About-Me">About Me</a>
+            </li>
 
-        <ul class="text-white hidden md:flex gap-6 text-base">
-          <li class="hover:text-primary transition-all duration-500 relative group h-4 cursor-pointer">
-            <span class="text-primary"> 01.</span>
-            <a href="#About-Me">About Me</a>
-          </li>
+            <li class="hover:text-primary transition-all duration-500 relative group h-4 cursor-pointer">
+              <span class="text-primary"> 02.</span>
+              <a href="#project-section">Projects</a>
+            </li>
 
-          <li class="hover:text-primary transition-all duration-500 relative group h-4 cursor-pointer">
-            <span class="text-primary"> 02.</span>
-            <a href="#project-section">Projects</a>
-          </li>
+            <li class="hover:text-primary transition-all duration-500 relative group h-4 cursor-pointer">
+              <span class="text-primary"> 03.</span>
+              <a href="#contact-section">Contact</a>
+            </li>
 
-          <li class="hover:text-primary transition-all duration-500 relative group h-4 cursor-pointer">
-            <span class="text-primary"> 03.</span>
-            <a href="#contact-section">Contact</a>
-          </li>
-
-          <li class="hover:text-primary transition-all duration-500 relative group h-4 cursor-pointer">
-            <span class="text-primary"> 04.</span>
-            <a href="https://drive.google.com/file/d/1Z4-YPPSq8n40UjI5qIygFy1-AkEzFFHm/view?usp=drive_link" download=""
-              target="_blank">Resume</a>
-          </li>
-        </ul>
-
-        <img id="menuBtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgB7dJBEQAgCEXBh0lsZ2w9WoEbIRgOMH8zrJ3vF9jUeAsZz7RI0vovCso6DH/KFYcdAAAAAElFTkSuQmCC" alt="" class="w-5 h-3 md:hidden">
-
-
-      </header>
-
+            <li class="hover:text-primary transition-all duration-500 relative group h-4 cursor-pointer">
+              <span class="text-primary"> 04.</span>
+              <a href="https://drive.google.com/file/d/1Z4-YPPSq8n40UjI5qIygFy1-AkEzFFHm/view?usp=drive_link"
+                download="" target="_blank">Resume</a>
+            </li>
+          </ul>
+          <img id="menuBtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAuSURBVHgB7dJBEQAgCEXBh0lsZ2w9WoEbIRgOMH8zrJ3vF9jUeAsZz7RI0vovCso6DH/KFYcdAAAAAElFTkSuQmCC" alt="" class="w-5 h-3 md:hidden">
+        </header>
+      </section>
 
       <main>
 
         <!-- hero-section -->
-        <section class="flex flex-col justify-center h-[100vh]">
+        <section class="opacity-0 flex flex-col justify-center h-[100vh]">
           <p class="text-[#515D77] text-sm md:text-[16px]">Hi, my name is</p>
           <h2 class="text-primary text-[28px] md:text-[64px] font-semibold">
             Adnan Shaikh
@@ -88,8 +103,7 @@
           </h2>
           <p class="text-[#515D77] md:w-[50%]  font-normal text-[14px] md:text-[16px]">
             As a MERN stack developer, I prioritize accessibility and user-centered design, crafting exceptional digital
-            experiences. Let's collaborate to bring your ideas to life and create impactful, intuitive, and innovative
-            products. Together, we can build captivating digital experiences that leave a lasting impression.
+            experiences. Together, we can build captivating digital experiences that leave a lasting impression.
           </p>
 
           <button
@@ -110,7 +124,7 @@
 
 
         <!-- About-Me -->
-        <section id="About-Me" class="pt-20">
+        <section id="About-Me" class="pt-20 opacity-0">
 
           <h2 class="text-primary font-semibold text-[16px] md:text-[36px] text-center mt-6 mb-2">
             <span class="text-[#515D77] text-[10px] md:text-[24px] pr-1">01.</span>
@@ -156,7 +170,7 @@
 
 
         <!-- Skills & Expertise -->
-        <section id="skills-expertise" class="">
+        <section id="skills-expertise" class="opacity-0">
           <h2 class="text-primary font-semibold text-[16px] md:text-[24px] text-center mt-16 mb-2">
             <span class="text-[#515D77] text-[10px] md:text-[24px] pr-1"></span>
             Skills & Expertise
@@ -198,7 +212,7 @@
         </section>
 
         <!-- project-section -->
-        <section id="project-section" class="flex  flex-col">
+        <section id="project-section" class="flex opacity-0 flex-col pt-16 md:pt-0">
           <h2 class="text-primary font-semibold text-[16px] md:text-[36px] text-center mb-2 mt-[30px] md:mt-[100px]">
             <span class="text-[#515D77] text-[10px] md:text-[24px] pr-1">02.</span>
             Some of my work.
@@ -243,15 +257,15 @@
 
               <!-- view live and github button for mobile phones -->
               <div class="md:hidden flex justify-between mt-4">
-                <a href="https://adushaiq.github.io/DevDetective/" target="_blank"
-                  class="flex items-center gap-2 bg-primary max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgBnVc7aJRBEP58dCqoRFRII9oEFCLY+ABTidqYs0jkSCEkaGEU63gaiTZiZwSJEo4kvlDE2kfiM5gINhY+uCKoaAStTCpjojPZ+c3c3O7/790HH8nNzuzu7D/77S4QjxbirkDbemIncYT4i/iHOEG8STxEXIoa8Yz4jbjI2PcTPxP/pvClTKxqXJMONitbM3EuY8CEPOF1oc4XB+w7iGPEjfK7zTPgG+IpYjuxlziJyoy9S/2Q2E9cgTA4w2nT4TniMuNXT3xg/HK+Dgel8YZ/PBwxGc5KdiGshFvaxP+6z4kL5RbxnqftAHHKzLwblcVlcVn5T6IKNBJnUJ5hITK2Q8XNRMbMZzKGygxjUVBxP2KDdpsBLyEeS4glFfuIjXuJr4hDxCYTsEb+XkH5N1kOt3VG4bZOCLxCPWbCx7lhD/GjGMZVQB5OEBjDKui22C4o2xn4i4nts8qPlatMmRqIdfL/UbhtkWybEVSWvK5ILo4Ok+FZkyFX/U4E0IaFbfFYbH0q+D2cqjR6skiyLZi2OaR8BqulJRmg1cz6pPh3Gnte/EtmwBxSMrRKc1raOIMJ07ZNBvik7P3in0jfFFIy3IdspeHz9Ldqvyr2J8r2VGyDkkCr/F5L3KL742r6EshQgwO6lN9FsesiGxYbb7G8ik2E5QPc+YsTJsMepGvpYbgjivcp71d9fPWJT52J2U4sShzrwnyFJkHv4BQkBjwxvW14OZsiY/FTBXYhHt0oX6FxZJ82/6FPjvbIGLsPuY+tqALfVXBvhq9PS7nqmz2+94kDCFx/hlB+eVqNMKyW8nc8GPAtis8deJY9Z2bOd6R648NVet74TSNFaSRmQPqrGJRV5YXpkLcBLzWLON9/3pp2raWbiK/hzlwfQrdLbCB+NR2HaLW0QexF1IBVxOcZA/JJ4ntasH0UNYKXmt8ed+EEnt8k/DbhK8YxhJ8GrDgtiMQ/iko9EdmgWdkAAAAASUVORK5CYII=" class="object-scale-down" width="20px" />
-                  View Live
+                <a href="#" target="_blank"
+                  class="flex items-center justify-center gap-2 bg-primary max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold text-xs">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgBnVc7aJRBEP58dCqoRFRII9oEFCLY+ABTidqYs0jkSCEkaGEU63gaiTZiZwSJEo4kvlDE2kfiM5gINhY+uCKoaAStTCpjojPZ+c3c3O7/790HH8nNzuzu7D/77S4QjxbirkDbemIncYT4i/iHOEG8STxEXIoa8Yz4jbjI2PcTPxP/pvClTKxqXJMONitbM3EuY8CEPOF1oc4XB+w7iGPEjfK7zTPgG+IpYjuxlziJyoy9S/2Q2E9cgTA4w2nT4TniMuNXT3xg/HK+Dgel8YZ/PBwxGc5KdiGshFvaxP+6z4kL5RbxnqftAHHKzLwblcVlcVn5T6IKNBJnUJ5hITK2Q8XNRMbMZzKGygxjUVBxP2KDdpsBLyEeS4glFfuIjXuJr4hDxCYTsEb+XkH5N1kOt3VG4bZOCLxCPWbCx7lhD/GjGMZVQB5OEBjDKui22C4o2xn4i4nts8qPlatMmRqIdfL/UbhtkWybEVSWvK5ILo4Ok+FZkyFX/U4E0IaFbfFYbH0q+D2cqjR6skiyLZi2OaR8BqulJRmg1cz6pPh3Gnte/EtmwBxSMrRKc1raOIMJ07ZNBvik7P3in0jfFFIy3IdspeHz9Ldqvyr2J8r2VGyDkkCr/F5L3KL742r6EshQgwO6lN9FsesiGxYbb7G8ik2E5QPc+YsTJsMepGvpYbgjivcp71d9fPWJT52J2U4sShzrwnyFJkHv4BQkBjwxvW14OZsiY/FTBXYhHt0oX6FxZJ82/6FPjvbIGLsPuY+tqALfVXBvhq9PS7nqmz2+94kDCFx/hlB+eVqNMKyW8nc8GPAtis8deJY9Z2bOd6R648NVet74TSNFaSRmQPqrGJRV5YXpkLcBLzWLON9/3pp2raWbiK/hzlwfQrdLbCB+NR2HaLW0QexF1IBVxOcZA/JJ4ntasH0UNYKXmt8ed+EEnt8k/DbhK8YxhJ8GrDgtiMQ/iko9EdmgWdkAAAAASUVORK5CYII=" class="object-scale-down" width="15px" />
+                  Live
                 </a>
 
-                <a href="https://github.com/Adushaiq/DevDetective" target="_blank"
-                  class="flex items-center gap-2 bg-primary max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold">
-                  <img src="assets/Github-d2ebcc2a.png" class="object-scale-down" width="20px" />
+                <a href="https://github.com/Adushaiq/" target="_blank"
+                  class="flex items-center justify-center gap-2 bg-primary max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold text-xs">
+                  <img src="assets/Github-d2ebcc2a.png" class="object-scale-down" width="15px" />
                   Github
                 </a>
               </div>
@@ -310,14 +324,14 @@
               <!-- view live and github button for mobile phones -->
               <div class="md:hidden flex justify-between mt-4">
                 <a href="https://adushaiq.github.io/dragonRepeller" target="_blank"
-                  class="flex items-center gap-2 bg-cyan-300 max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgBnVc7aJRBEP58dCqoRFRII9oEFCLY+ABTidqYs0jkSCEkaGEU63gaiTZiZwSJEo4kvlDE2kfiM5gINhY+uCKoaAStTCpjojPZ+c3c3O7/790HH8nNzuzu7D/77S4QjxbirkDbemIncYT4i/iHOEG8STxEXIoa8Yz4jbjI2PcTPxP/pvClTKxqXJMONitbM3EuY8CEPOF1oc4XB+w7iGPEjfK7zTPgG+IpYjuxlziJyoy9S/2Q2E9cgTA4w2nT4TniMuNXT3xg/HK+Dgel8YZ/PBwxGc5KdiGshFvaxP+6z4kL5RbxnqftAHHKzLwblcVlcVn5T6IKNBJnUJ5hITK2Q8XNRMbMZzKGygxjUVBxP2KDdpsBLyEeS4glFfuIjXuJr4hDxCYTsEb+XkH5N1kOt3VG4bZOCLxCPWbCx7lhD/GjGMZVQB5OEBjDKui22C4o2xn4i4nts8qPlatMmRqIdfL/UbhtkWybEVSWvK5ILo4Ok+FZkyFX/U4E0IaFbfFYbH0q+D2cqjR6skiyLZi2OaR8BqulJRmg1cz6pPh3Gnte/EtmwBxSMrRKc1raOIMJ07ZNBvik7P3in0jfFFIy3IdspeHz9Ldqvyr2J8r2VGyDkkCr/F5L3KL742r6EshQgwO6lN9FsesiGxYbb7G8ik2E5QPc+YsTJsMepGvpYbgjivcp71d9fPWJT52J2U4sShzrwnyFJkHv4BQkBjwxvW14OZsiY/FTBXYhHt0oX6FxZJ82/6FPjvbIGLsPuY+tqALfVXBvhq9PS7nqmz2+94kDCFx/hlB+eVqNMKyW8nc8GPAtis8deJY9Z2bOd6R648NVet74TSNFaSRmQPqrGJRV5YXpkLcBLzWLON9/3pp2raWbiK/hzlwfQrdLbCB+NR2HaLW0QexF1IBVxOcZA/JJ4ntasH0UNYKXmt8ed+EEnt8k/DbhK8YxhJ8GrDgtiMQ/iko9EdmgWdkAAAAASUVORK5CYII=" class="object-scale-down" width="20px" />
-                  View Live
+                  class="flex items-center justify-center gap-2 bg-primary max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold text-xs">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgBnVc7aJRBEP58dCqoRFRII9oEFCLY+ABTidqYs0jkSCEkaGEU63gaiTZiZwSJEo4kvlDE2kfiM5gINhY+uCKoaAStTCpjojPZ+c3c3O7/790HH8nNzuzu7D/77S4QjxbirkDbemIncYT4i/iHOEG8STxEXIoa8Yz4jbjI2PcTPxP/pvClTKxqXJMONitbM3EuY8CEPOF1oc4XB+w7iGPEjfK7zTPgG+IpYjuxlziJyoy9S/2Q2E9cgTA4w2nT4TniMuNXT3xg/HK+Dgel8YZ/PBwxGc5KdiGshFvaxP+6z4kL5RbxnqftAHHKzLwblcVlcVn5T6IKNBJnUJ5hITK2Q8XNRMbMZzKGygxjUVBxP2KDdpsBLyEeS4glFfuIjXuJr4hDxCYTsEb+XkH5N1kOt3VG4bZOCLxCPWbCx7lhD/GjGMZVQB5OEBjDKui22C4o2xn4i4nts8qPlatMmRqIdfL/UbhtkWybEVSWvK5ILo4Ok+FZkyFX/U4E0IaFbfFYbH0q+D2cqjR6skiyLZi2OaR8BqulJRmg1cz6pPh3Gnte/EtmwBxSMrRKc1raOIMJ07ZNBvik7P3in0jfFFIy3IdspeHz9Ldqvyr2J8r2VGyDkkCr/F5L3KL742r6EshQgwO6lN9FsesiGxYbb7G8ik2E5QPc+YsTJsMepGvpYbgjivcp71d9fPWJT52J2U4sShzrwnyFJkHv4BQkBjwxvW14OZsiY/FTBXYhHt0oX6FxZJ82/6FPjvbIGLsPuY+tqALfVXBvhq9PS7nqmz2+94kDCFx/hlB+eVqNMKyW8nc8GPAtis8deJY9Z2bOd6R648NVet74TSNFaSRmQPqrGJRV5YXpkLcBLzWLON9/3pp2raWbiK/hzlwfQrdLbCB+NR2HaLW0QexF1IBVxOcZA/JJ4ntasH0UNYKXmt8ed+EEnt8k/DbhK8YxhJ8GrDgtiMQ/iko9EdmgWdkAAAAASUVORK5CYII=" class="object-scale-down" width="15px" />
+                  Live
                 </a>
 
                 <a href="https://github.com/Adushaiq/dragonRepeller" target="_blank"
-                  class="flex items-center gap-2 bg-cyan-300 max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold">
-                  <img src="assets/Github-d2ebcc2a.png" class="object-scale-down" width="20px" />
+                  class="flex items-center justify-center gap-2 bg-primary max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold text-xs">
+                  <img src="assets/Github-d2ebcc2a.png" class="object-scale-down" width="15px" />
                   Github
                 </a>
               </div>
@@ -373,14 +387,14 @@
               <!-- view live and github button for mobile phones -->
               <div class="md:hidden flex justify-between mt-4">
                 <a href="#" target="_blank"
-                  class="flex items-center gap-2 bg-cyan-300 max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgBnVc7aJRBEP58dCqoRFRII9oEFCLY+ABTidqYs0jkSCEkaGEU63gaiTZiZwSJEo4kvlDE2kfiM5gINhY+uCKoaAStTCpjojPZ+c3c3O7/790HH8nNzuzu7D/77S4QjxbirkDbemIncYT4i/iHOEG8STxEXIoa8Yz4jbjI2PcTPxP/pvClTKxqXJMONitbM3EuY8CEPOF1oc4XB+w7iGPEjfK7zTPgG+IpYjuxlziJyoy9S/2Q2E9cgTA4w2nT4TniMuNXT3xg/HK+Dgel8YZ/PBwxGc5KdiGshFvaxP+6z4kL5RbxnqftAHHKzLwblcVlcVn5T6IKNBJnUJ5hITK2Q8XNRMbMZzKGygxjUVBxP2KDdpsBLyEeS4glFfuIjXuJr4hDxCYTsEb+XkH5N1kOt3VG4bZOCLxCPWbCx7lhD/GjGMZVQB5OEBjDKui22C4o2xn4i4nts8qPlatMmRqIdfL/UbhtkWybEVSWvK5ILo4Ok+FZkyFX/U4E0IaFbfFYbH0q+D2cqjR6skiyLZi2OaR8BqulJRmg1cz6pPh3Gnte/EtmwBxSMrRKc1raOIMJ07ZNBvik7P3in0jfFFIy3IdspeHz9Ldqvyr2J8r2VGyDkkCr/F5L3KL742r6EshQgwO6lN9FsesiGxYbb7G8ik2E5QPc+YsTJsMepGvpYbgjivcp71d9fPWJT52J2U4sShzrwnyFJkHv4BQkBjwxvW14OZsiY/FTBXYhHt0oX6FxZJ82/6FPjvbIGLsPuY+tqALfVXBvhq9PS7nqmz2+94kDCFx/hlB+eVqNMKyW8nc8GPAtis8deJY9Z2bOd6R648NVet74TSNFaSRmQPqrGJRV5YXpkLcBLzWLON9/3pp2raWbiK/hzlwfQrdLbCB+NR2HaLW0QexF1IBVxOcZA/JJ4ntasH0UNYKXmt8ed+EEnt8k/DbhK8YxhJ8GrDgtiMQ/iko9EdmgWdkAAAAASUVORK5CYII=" class="object-scale-down" width="20px" />
-                  View Live
+                  class="flex items-center justify-center gap-2 bg-primary max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold text-xs">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALZSURBVHgBnVc7aJRBEP58dCqoRFRII9oEFCLY+ABTidqYs0jkSCEkaGEU63gaiTZiZwSJEo4kvlDE2kfiM5gINhY+uCKoaAStTCpjojPZ+c3c3O7/790HH8nNzuzu7D/77S4QjxbirkDbemIncYT4i/iHOEG8STxEXIoa8Yz4jbjI2PcTPxP/pvClTKxqXJMONitbM3EuY8CEPOF1oc4XB+w7iGPEjfK7zTPgG+IpYjuxlziJyoy9S/2Q2E9cgTA4w2nT4TniMuNXT3xg/HK+Dgel8YZ/PBwxGc5KdiGshFvaxP+6z4kL5RbxnqftAHHKzLwblcVlcVn5T6IKNBJnUJ5hITK2Q8XNRMbMZzKGygxjUVBxP2KDdpsBLyEeS4glFfuIjXuJr4hDxCYTsEb+XkH5N1kOt3VG4bZOCLxCPWbCx7lhD/GjGMZVQB5OEBjDKui22C4o2xn4i4nts8qPlatMmRqIdfL/UbhtkWybEVSWvK5ILo4Ok+FZkyFX/U4E0IaFbfFYbH0q+D2cqjR6skiyLZi2OaR8BqulJRmg1cz6pPh3Gnte/EtmwBxSMrRKc1raOIMJ07ZNBvik7P3in0jfFFIy3IdspeHz9Ldqvyr2J8r2VGyDkkCr/F5L3KL742r6EshQgwO6lN9FsesiGxYbb7G8ik2E5QPc+YsTJsMepGvpYbgjivcp71d9fPWJT52J2U4sShzrwnyFJkHv4BQkBjwxvW14OZsiY/FTBXYhHt0oX6FxZJ82/6FPjvbIGLsPuY+tqALfVXBvhq9PS7nqmz2+94kDCFx/hlB+eVqNMKyW8nc8GPAtis8deJY9Z2bOd6R648NVet74TSNFaSRmQPqrGJRV5YXpkLcBLzWLON9/3pp2raWbiK/hzlwfQrdLbCB+NR2HaLW0QexF1IBVxOcZA/JJ4ntasH0UNYKXmt8ed+EEnt8k/DbhK8YxhJ8GrDgtiMQ/iko9EdmgWdkAAAAASUVORK5CYII=" class="object-scale-down" width="15px" />
+                  Live
                 </a>
 
                 <a href="https://github.com/Adushaiq/" target="_blank"
-                  class="flex items-center gap-2 bg-cyan-300 max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold">
-                  <img src="assets/Github-d2ebcc2a.png" class="object-scale-down" width="20px" />
+                  class="flex items-center justify-center gap-2 bg-primary max-h-7 w-[49%] py-4 px-2 rounded-md font-semibold text-xs">
+                  <img src="assets/Github-d2ebcc2a.png" class="object-scale-down" width="15px" />
                   Github
                 </a>
               </div>
@@ -547,7 +561,7 @@
 
 
         <!-- Contact Section -->
-        <section id="contact-section" class="pt-10">
+        <section id="contact-section" class="md:pt-10 pt-20 opacity-0">
           <h2 class="text-primary font-semibold text-[16px] md:text-[20px] text-center mb-2 mt-[30px] md:mt-[100px]">
             <span class="text-[#515D77] text-[10px] md:text-[16px] pr-1">03.</span>
             Whats Next?
@@ -597,6 +611,8 @@
 
     </div>
   </div>
+
+  
 
 </body>
 
